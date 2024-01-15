@@ -1,172 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon | 3SixtyShows</title>
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-            text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-        }
-
-        .container {
-            max-width: 800px;
-            padding: 40px;
-            background-color: #fff;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            width: 100%;
-        }
-
-        .logo {
-            max-width: 15%;  /* Make the logo responsive */
-            height: auto;
-            margin-bottom: 20px;
-        }
-
-        h1 {
-            font-size: 28px;
-            margin-bottom: 20px;
-            color: #333;
-        }
-
-        p {
-            font-size: 16px;
-            margin-bottom: 30px;
-            color: #666;
-        }
-
-        #countdown {
-            font-size: 24px;
-            margin-bottom: 30px;
-        }
-
-        .posters {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-
-        .poster {
-            /* width: 150px;
-            height: 200px; */
-            width: 300px;
-            height: 450px;
-            margin: 10px;
-            border-radius: 5px;
-            overflow: hidden;
-        }
-
-        .poster img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .contact-button {
-            display: inline-block;
-            padding: 15px 30px;
-            background-color: #ff5722;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 18px;
-            transition: background-color 0.3s ease;
-        }
-
-        .contact-button:hover {
-            background-color: #e64a19;
-        }
-
-        @media only screen and (max-width: 600px) {
-            .container {
-                padding: 20px;
-            }
-
-            h1 {
-                font-size: 24px;
-            }
-
-            p {
-                font-size: 14px;
-            }
-
-            #countdown {
-                font-size: 20px;
-            }
-
-            .logo {
-                max-width: 80%;  /* Adjust the logo size for smaller screens */
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rave Management</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/gsap@3.10.0/dist/gsap.min.js"></script>
 </head>
 <body>
-    <div class="container">
-        <img src="logo.png" alt="3SixtyShows Logo" class="logo">
+
+<div class="container">
+  <h1>Rave Management by 3sixtyshows</h1>
+  <p>RAVE is an Event Management Team providing excellent Event Management Services.</p>
+  <!-- <br> -->
+  <img src="logo.jpg" alt="Rave Logo" class="logo">
         <h1>Coming Soon</h1>
         <p>We're working on something awesome and can't wait to share it with you. Stay tuned!</p>
-        <!-- <div id="countdown"></div> -->
-        <div class="posters">
-            
-            <!-- <div class="poster">
-                <a href="https://tinyurl.com/jubindallas">
-                    <img src="show2.jpg" alt="Jubin Show">
-                </a>
-            </div> -->
-            <a href="https://tinyurl.com/jubindallas">
-                <div>
-                    <video width="640" height="360" controls>
-                        <!-- Provide the video source(s) -->
-                        <source src="video.mp4" type="video/mp4">
-                        <!-- Add more source elements for different formats if needed -->
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-            </a>
-              
-        </div>
-        <a href="https://tinyurl.com/jubindallas" class="contact-button">Tickets</a>
-        <a href="mailto:info@3sixtyshows.com" class="contact-button">Contact Us</a>
-    </div>
+  <p>Please check our work, like and follow us on RAVE Management on Facebook and Instagram:
+</p>
+  <div class="social-links">
+    <a href="https://www.facebook.com/raveemt/" target="_blank">Facebook</a>
+    <a href="https://www.instagram.com/rave.emt/" target="_blank">Instagram 1</a>
+    <a href="https://www.instagram.com/rave.mgt/" target="_blank">Instagram 2</a>
+    <a href="https://ravemanagement.pixieset.com/raveemt/" target="_blank">Gallery 1</a>
+    <a href="https://ravemanagementservices.pixieset.com/familymoments/" target="_blank">Gallery 2</a>
+  </div>
+</div>
 
-    <script>
-        // Set your target date for the countdown
-        var targetDate = new Date("December 31, 2023 23:59:59").getTime();
-
-        // Update the countdown every second
-        var countdownInterval = setInterval(function() {
-            var now = new Date().getTime();
-            var distance = targetDate - now;
-
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            document.getElementById("countdown").innerHTML =
-                '<div>' + days + ' <span>days</span></div>' +
-                '<div>' + hours + ' <span>hours</span></div>' +
-                '<div>' + minutes + ' <span>minutes</span></div>' +
-                '<div>' + seconds + ' <span>seconds</span></div>';
-
-            // If the countdown is over, clear the interval
-            if (distance < 0) {
-                clearInterval(countdownInterval);
-                document.getElementById("countdown").innerHTML = "EXPIRED";
-            }
-        }, 1000);
-    </script>
+<script src="animations.js"></script>
 </body>
 </html>
+
